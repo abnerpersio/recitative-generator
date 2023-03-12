@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .container {
+        margin: 10px;
+        padding: 16px;
+        width: 560px;
+        background-color: white;
+        color: black;
+        border: 1px dashed rgba(0, 0, 0, 0.25);
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 22px;
+      }
+
+      .input-group {
+        width: 100%;
+        margin: 5px auto;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .input-group div:not(.input) {
+        flex: 1;
+        display: flex;
+        gap: 5px;
+      }
+
+      .input-group span.label {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .input-group .input {
+        width: 100%;
+        border-bottom: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Congregação cristã no brasil</h1>
+
+      <div class="input-group">
+        <span class="label">Nome:</span>
+        <div class="input">{{nome}}</div>
+      </div>
+
+      <div class="input-group">
+        <span class="label">Livro:</span>
+        <div class="input">{{livro}}</div>
+      </div>
+
+      <div class="input-group">
+        <div>
+          <span class="label">Capítulo:</span>
+          <div class="input">{{capitulo}}</div>
+        </div>
+
+        <div>
+          <span class="label">Versos:</span>
+          <div class="input">{{versoInicial}}</div>
+          ao
+          <div class="input">{{versoFinal}}</div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <span class="label">Após:</span>
+        <div class="input">{{apos}}</div>
+      </div>
+
+      <div class="input-group">
+        <span class="label">Recitativo para o dia:</span>
+        <div class="date">
+          <div class="input">{{dia}}</div>
+          <span>/</span>
+          <div class="input">{{mes}}</div>
+          <span>/</span>
+          <div class="input">{{ano}}</div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <span class="label">Auxiliar:</span>
+        <div class="input">{{auxiliar}}</div>
+      </div>
+    </div>
+  </body>
+</html>
