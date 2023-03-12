@@ -2,13 +2,13 @@
   "name": "recitative-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js'"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Abner Persio",
+  "license": "MIT",
   "dependencies": {
     "handlebars": "^4.7.7",
     "puppeteer": "^19.7.4"
