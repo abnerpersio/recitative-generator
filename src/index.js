@@ -13,7 +13,7 @@ async function generateRecitative(page, variables = {}) {
 
   const htmlContent = generate(variables);
 
-  await page.setContent(`${htmlContent} \n ${htmlContent}`);
+  await page.setContent(htmlContent);
   const pdfFilePath = path.resolve(__dirname, 'assets', 'pdf', `${fileName}.pdf`);
 
   await page.pdf({
